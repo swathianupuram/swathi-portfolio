@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 export default function ScrollbarController() {
   const thumbRef = useRef<HTMLDivElement>(null);
-  const hideTimeout = useRef<ReturnType<typeof setTimeout>>();
+  const hideTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const thumb = thumbRef.current;
