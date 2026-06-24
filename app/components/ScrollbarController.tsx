@@ -22,7 +22,7 @@ export default function ScrollbarController() {
     const show = () => {
       updateThumb();
       thumb.style.opacity = "1";
-      clearTimeout(hideTimeout.current);
+      if (hideTimeout.current !== null) clearTimeout(hideTimeout.current);
       hideTimeout.current = setTimeout(() => {
         thumb.style.opacity = "0";
       }, 1000);
@@ -35,7 +35,7 @@ export default function ScrollbarController() {
     return () => {
       window.removeEventListener("scroll", show);
       window.removeEventListener("mousemove", show);
-      clearTimeout(hideTimeout.current);
+      if (hideTimeout.current !== null) clearTimeout(hideTimeout.current);
     };
   }, []);
 
