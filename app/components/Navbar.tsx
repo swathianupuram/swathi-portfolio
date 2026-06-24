@@ -113,7 +113,9 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="mailto:swathianupuram2@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&to=swathianupuram2@gmail.com"
+          target="_blank"
+          rel="noreferrer"
           className="hidden-mobile"
           style={{ background: "var(--accent)", color: "#fff", padding: "8px 22px", borderRadius: "7px", fontSize: "0.84rem", fontWeight: 600, textDecoration: "none", letterSpacing: "0.02em", transition: "background 0.2s ease" }}
           onMouseOver={(e) => (e.currentTarget.style.background = "var(--accent-mid)")}

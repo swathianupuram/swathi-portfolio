@@ -25,7 +25,7 @@ export default function Contact() {
               ),
               label: "Email",
               value: "swathianupuram2@gmail.com",
-              href: "mailto:swathianupuram2@gmail.com",
+              href: "https://mail.google.com/mail/?view=cm&to=swathianupuram2@gmail.com",
             },
             {
               icon: (
@@ -70,7 +70,9 @@ export default function Contact() {
 
         {/* CTA */}
         <a
-          href="mailto:swathianupuram2@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&to=swathianupuram2@gmail.com"
+          target="_blank"
+          rel="noreferrer"
           style={{ display: "inline-flex", alignItems: "center", gap: "10px", background: "var(--accent)", color: "#fff", padding: "14px 36px", borderRadius: "8px", fontSize: "0.95rem", fontWeight: 600, textDecoration: "none", fontFamily: "'Inter', sans-serif", letterSpacing: "0.02em", transition: "background 0.2s ease, transform 0.2s ease" }}
           onMouseOver={(e) => { e.currentTarget.style.background = "var(--accent-mid)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
           onMouseOut={(e) => { e.currentTarget.style.background = "var(--accent)"; e.currentTarget.style.transform = "none"; }}
