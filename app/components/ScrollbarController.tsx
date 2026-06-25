@@ -29,12 +29,13 @@ export default function ScrollbarController() {
     };
 
     updateThumb();
+    const isTouchDevice = window.matchMedia("(hover: none)").matches;
     window.addEventListener("scroll", show, { passive: true });
-    window.addEventListener("mousemove", show, { passive: true });
+    if (!isTouchDevice) window.addEventListener("mousemove", show, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", show);
-      window.removeEventListener("mousemove", show);
+      if (!isTouchDevice) window.removeEventListener("mousemove", show);
       if (hideTimeout.current !== null) clearTimeout(hideTimeout.current);
     };
   }, []);
