@@ -118,7 +118,11 @@ export default function Hero() {
         </div>
 
         {/* Scroll hint */}
-        <div style={{ marginTop: "72px", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }} className="animate-float">
+        <div
+          onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}
+          style={{ marginTop: "72px", display: "flex", flexDirection: "column", alignItems: "center", gap: "8px", cursor: "pointer" }}
+          className="animate-float"
+        >
           <span style={{ color: "var(--text-muted)", fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase" }}>Scroll</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="1.5">
             <path d="M12 5v14M5 12l7 7 7-7" />

@@ -87,7 +87,7 @@ export default function Contact() {
       {/* Footer */}
       <div style={{ textAlign: "center", marginTop: "80px", paddingTop: "32px", borderTop: "1px solid var(--border-subtle)" }}>
         <p style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}>
-          © 2025 Swathi Anupuram · Built with Next.js & TypeScript · Sydney, AU
+          © 2026 Swathi Anupuram · Built with Next.js & TypeScript · Sydney, AU
         </p>
       </div>
     </section>
