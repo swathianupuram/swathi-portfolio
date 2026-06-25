@@ -29,7 +29,7 @@ export default function ScrollbarController() {
     };
 
     updateThumb();
-    const isTouchDevice = window.matchMedia("(hover: none)").matches;
+    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
     window.addEventListener("scroll", show, { passive: true });
     if (!isTouchDevice) window.addEventListener("mousemove", show, { passive: true });
 
